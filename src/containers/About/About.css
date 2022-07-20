@@ -1,3 +1,7 @@
+.head-text-2 span {
+  text-transform: uppercase;
+}
+
 .app__about {
   -webkit-box-flex: 1;
       -ms-flex: 1;

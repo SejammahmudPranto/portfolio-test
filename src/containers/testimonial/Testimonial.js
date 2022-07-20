@@ -32,7 +32,8 @@ const Testimonial = () => {
     <>
       {testimonials.length && (
         <>
-          <div className="app__testimonial-item app__flex">
+          <div className='Achievement-Header'>Achievement HighLights</div>
+          <div className="app__testimonial-item app__flex" style={ { justifyContent : "space-between"}}>
             <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
             <div className="app__testimonial-content">
               <p className="p-text">{testimonials[currentIndex].feedback}</p>

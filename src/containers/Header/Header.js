@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.css';
-import profilepic from "../../assets/me.png";
+import profilepic from "../../assets/me2.png";
 
 const scaleVariants = {
   whileInView: {
@@ -25,17 +25,17 @@ const Header = () => (
       className="app__header-info"
     >
       <div className="app__header-badge">
-        <div className="badge-cmp app__flex">
+        <div className="badge-cmp app__flex" style={{ paddingRight: "1rem"}} >
           <span>👋</span>
-          <div style={{ marginLeft: 20 }}>
+          <div style={{ marginLeft: 10 }}>
             <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">PRANTO</h1>
+            <h1 className="head-text " style={ {fontSize : "1rem", textAlign: "start" } }>Sejan Mahmud Pranto</h1>
           </div>
         </div>
 
-        <div className="tag-cmp app__flex">
-          <p className="p-text">Web Developer</p>
-          <p className="p-text">Freelancer</p>
+        <div className="tag-cmp app__flex" >
+          <p className="p-text" style={ {fontSize : ".8rem", fontWeight: 600 } }>Frontend Web Developer</p>
+          <p className="p-text" style={ {fontSize : ".8rem", fontWeight: 600 } }>SEO Expert</p>
         </div>
       </div>
     </motion.div>

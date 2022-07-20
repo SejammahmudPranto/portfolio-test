@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+// eslint-disable-next-line no-unused-vars
 import ReactTooltip from 'react-tooltip';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -7,6 +8,7 @@ import { urlFor, client } from '../../client';
 import './Skills.css';
 
 const Skills = () => {
+  // eslint-disable-next-line no-unused-vars
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
 
@@ -25,7 +27,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">Skills</h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -46,7 +48,7 @@ const Skills = () => {
             </motion.div>
           ))}
         </motion.div>
-        <div className="app__skills-exp">
+        {/* <div className="app__skills-exp">
           {experiences.map((experience) => (
             <motion.div
               className="app__skills-exp-item"
@@ -82,7 +84,7 @@ const Skills = () => {
               </motion.div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   );
