@@ -27,8 +27,9 @@
   
     @media screen and (max-width: 900px) {
       margin-right: 0;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
     }
   }
   
