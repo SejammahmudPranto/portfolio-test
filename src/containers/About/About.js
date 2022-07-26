@@ -13,6 +13,7 @@ const About = () => {
 
     client.fetch(query).then((data) => {
       setAbouts(data);
+      // console.log({data});
     });
   }, []);
 
@@ -30,8 +31,10 @@ const About = () => {
             key={about.title + index}
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
-            <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
+            <div style={{padding : "0 0.5rem"}}>
+              <h2 className="bold-text" style={{ marginTop: 20 , minHeight : "2.5rem"}}>{about.title}</h2>
+              <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
+            </div>
           </motion.div>
         ))}
       </div>

@@ -15,10 +15,12 @@ const Footer = () => {
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    // console.log(formData);
   };
 
   const handleSubmit = () => {
     setLoading(true);
+    // console.log("handlesubmit triggered");
 
     const contact = {
       _type: 'contact',
@@ -35,9 +37,13 @@ const Footer = () => {
       .catch((err) => console.log(err));
   };
 
+  // useEffect(() => {
+  //   console.log(`var ${process.env.REACT_APP_SANITY_TOKEN}`);
+  // }, []);
+
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">Take a coffee &amp; chat with me</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
