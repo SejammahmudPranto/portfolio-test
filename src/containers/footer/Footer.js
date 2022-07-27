@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -37,9 +37,9 @@ const Footer = () => {
       .catch((err) => console.log(err));
   };
 
-  // useEffect(() => {
-  //   console.log(`var ${process.env.REACT_APP_SANITY_TOKEN}`);
-  // }, []);
+  useEffect(() => {
+    // console.log(`var ${process.env.REACT_APP_PROJECT_ID}`);
+  }, []);
 
   return (
     <>
