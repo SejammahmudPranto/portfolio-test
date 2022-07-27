@@ -38,7 +38,7 @@ const Footer = () => {
   };
 
   useEffect(() => {
-    console.log(`var ${process.env.REACT_APP_PROJECT_ID}`);
+    // console.log(`var ${process.env.REACT_APP_PROJECT_ID}`);
   }, []);
 
   return (
