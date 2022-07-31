@@ -3,7 +3,7 @@ import About from './containers/About/About';
 import Footer from './containers/footer/Footer';
 import Header from './containers/Header/Header';
 import Skills from './containers/Skills/Skills';
-import Testimonial from './containers/testimonial/Testimonial';
+// import Testimonial from './containers/testimonial/Testimonial';
 import Work from './containers/Work/Work';
 import "./App.css";
 //import About from './containers/About/About';
@@ -17,7 +17,7 @@ function App() {
       <About/>
       <Work/>
       <Skills/>
-      <Testimonial/>
+      {/* <Testimonial/> */}
       <Footer/>
     </div>
   );
