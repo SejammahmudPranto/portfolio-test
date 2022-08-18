@@ -44,7 +44,6 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-right: 5rem;
   flex-wrap: wrap;
 }
 
