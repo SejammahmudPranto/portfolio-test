@@ -10,7 +10,7 @@
 }
 
 .app__skills-container {
-  width: 80%;
+  width:80%;
   margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +45,7 @@
       -ms-flex-align: start;
           align-items: flex-start;
   margin-right: 5rem;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 900px) {
